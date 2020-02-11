@@ -1,8 +1,10 @@
 class Show
 
 
-  def initialize(show_info)
-    @show_info = show_info
+  def initialize(name, creator, characters)
+    @name = name
+    @creator = creator
+    @characters = characters
   end
 
 

@@ -12,8 +12,7 @@ class ShowTest < Minitest::Test
   end
 
   def test_it_exists
-
-    assert_instance_of Show, show
+    assert_instance_of Show, @knight_rider
   end
 
 
