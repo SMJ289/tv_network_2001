@@ -11,5 +11,9 @@ class Show
     @characters.sum { |character| character.salary }
   end
 
+  def highest_paid_actor
+    highest_paid = @characters.max_by { |character| character.salary }
+    highest_paid.actor
+  end
 
 end
