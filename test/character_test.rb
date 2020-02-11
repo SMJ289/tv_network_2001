@@ -16,13 +16,13 @@ def test_it_can_show_name
   assert_equal "KITT", kitt.name
 end
 
-def test_it_can_actor
+def test_it_can_show_actor
   kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
 
   assert_equal "William Daniels", kitt.actor
 end
 
-def test_it_can_actor
+def test_it_can_show_salary
   kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
 
   assert_equal 1000000, kitt.salary
