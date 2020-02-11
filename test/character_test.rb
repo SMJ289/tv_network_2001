@@ -18,14 +18,14 @@ end
 
 def test_it_can_actor
   kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-  
+
   assert_equal "William Daniels", kitt.actor
 end
 
+def test_it_can_actor
+  kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
+
+  assert_equal 1000000, kitt.salary
 end
 
-# pry(main)> kitt.actor
-# # => "William Daniels"
-#
-# pry(main)> kitt.salary
-# # => 1000000
+end
