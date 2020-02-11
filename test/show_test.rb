@@ -15,21 +15,19 @@ class ShowTest < Minitest::Test
     assert_instance_of Show, @knight_rider
   end
 
+  def test_it_has_attributes
+    assert_equal "Knight Rider", @knight_rider.name
+    assert_equal "Glen Larson", @knight_rider.creator
+    assert_equal [@michael_knight, @kitt], @knight_rider.characters
+  end
 
-
+  def test_it_can_calculate_total_salary
+    assert_equal 2600000, @knight_rider.total_salary
+  end
 
 end
 
-#
-# pry(main)> knight_rider.name
-# # => "Knight Rider"
-#
-# pry(main)> knight_rider.creator
-# # => "Glen Larson"
-#
-# pry(main)> knight_rider.characters
-# # => [#<Character:0x00007f8327213de0...>, #<Character:0x00007f8326ab57d8...>]
-#
+
 # pry(main)> knight_rider.total_salary
 # # => 2600000
 #
