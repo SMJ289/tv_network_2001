@@ -16,4 +16,8 @@ class Show
     highest_paid.actor
   end
 
+  def actors
+    @characters.map { |character| character.actor }
+  end
+
 end
